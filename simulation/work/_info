@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/modelsim_dlx64_10.6c/examples
+vconv1
+Z0 !s110 1721654917
+!i10b 1
+!s100 KNfKYmKicRF_hF0DAB^5k3
+IUdQIjmDJ3<E6[cT=YA`m43
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation
+w1721654873
+8C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/conv1.v
+FC:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/conv1.v
+L0 3
+Z3 OP;L;10.6c;65
+r1
+!s85 0
+31
+Z4 !s108 1721654917.000000
+!s107 C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/conv1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/conv1.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vout_ram
+R0
+!i10b 1
+!s100 :OcaN>FmaJmf6B;FNgz7H3
+IEj[DdzmCV45iPFi7j?74B2
+R1
+R2
+w1721637343
+8C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\out_ram.v
+FC:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\out_ram.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\out_ram.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\out_ram.v|
+!i113 1
+R5
+R6
+vrom_8x784
+R0
+!i10b 1
+!s100 Z4XVe80RWFJ8m2_ZHOJWj2
+IAS=BW7hNK<@zZL48cQgYO2
+R1
+R2
+w1721640686
+8C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\rom_model.v
+FC:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\rom_model.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\rom_model.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\rom_model.v|
+!i113 1
+R5
+R6
+vtb_conv1
+R0
+!i10b 1
+!s100 5fNdaIm;j_eX_8A^m?i8h0
+Il@fLEXYbi`l[5nTlLR32Z0
+R1
+R2
+w1721640139
+8C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/conv1_tb.v
+FC:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/conv1_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/conv1_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/conv1_tb.v|
+!i113 1
+R5
+R6

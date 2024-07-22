@@ -29,19 +29,12 @@ module conv1
         end
     end
 
-    always @(posedge clk or negedge rst_n) begin
-        if (~rst_n) begin
-            upstream_busy_d1 <= 1;
-        end else begin
-            upstream_busy_d1 <= upstream_busy;
-        end
-    end
     
     
 
     always @(*) begin
         case (state)
-            IDLE: next_state = (~upstream_busy && upstream_busy_d1)? FILL: IDLE;
+            IDLE: next_state = (upstream_busy && ~upstream_busy_d1)? FILL: IDLE;
             FILL: next_state = (raddr == 140)? CALC: FILL;
             CALC: next_state = (index_x==27 && index_y==23 && channel_cnt == 3)? IDLE: CALC;  
             default: next_state = IDLE;
@@ -95,7 +88,7 @@ module conv1
                 FILL: begin
                     if(raddr != 140) begin
                         ren <= 1;
-                        raddr <= ren? raddr + 1: raddr;
+                        raddr <= raddr + 1;
                         buffer_addr <= raddr[7:0];
                         buffer[buffer_addr] <= data_in;
                     end else begin
@@ -105,29 +98,17 @@ module conv1
 
                 end
                 CALC: begin
-                    if(channel_cnt == 2'b01 && index_x == 27)begin
+                    if(channel_cnt == 2) begin
                         ren <= 1;
                         raddr <= raddr + 1;
+                        buffer[index_x] <= buffer[index_x + 28];
+                        buffer[index_x + 28] <= buffer[index_x + 56];
+                        buffer[index_x + 56] <= buffer[index_x + 84];
+                        buffer[index_x + 84] <= buffer[index_x + 112];
+                        buffer[index_x + 112] <= data_in;
+                    end else begin
+                        ren <= 0;
                     end
-                    if(channel_cnt == 2 ) begin
-                        if(index_x != 27)begin
-                            raddr <= raddr + 1;
-                            buffer[index_x] <= buffer[index_x + 28];
-                            buffer[index_x + 28] <= buffer[index_x + 56];
-                            buffer[index_x + 56] <= buffer[index_x + 84];
-                            buffer[index_x + 84] <= buffer[index_x + 112];
-                            buffer[index_x + 112] <= data_in;
-                        end else begin
-                            ren <= 0;
-                            buffer[index_x] <= buffer[index_x + 28];
-                            buffer[index_x + 28] <= buffer[index_x + 56];
-                            buffer[index_x + 56] <= buffer[index_x + 84];
-                            buffer[index_x + 84] <= buffer[index_x + 112];
-                            buffer[index_x + 112] <= data_in;
-
-                        end
-                    end 
-
                 end
                 default: begin
                     raddr <= 0;
@@ -137,9 +118,9 @@ module conv1
         end
     end
 
-    reg signed [7:0] w_1[0:24], w_2[0:24], w_3 [0:24];
+    reg signed [7:0] w_1, w_2, w_3 [0:24];
     reg signed [7:0] bias [0:2];
-    reg signed [7:0] w_sel[0:24];
+    reg signed w_sel[0:24];
     reg signed [7:0] bias_sel;
     
     initial begin
@@ -164,7 +145,7 @@ module conv1
                 end
                 bias_sel = bias[1];
             end
-            2'b10: begin 
+            2'b00: begin 
                 for(i=0; i<25; i=i+1) begin
                     w_sel[i] <= w_3[i];
                 end
@@ -204,9 +185,9 @@ module conv1
     end
 
     always @(*) begin
-        waddr = index_x + index_y * 24 + channel_cnt * 575;
+        waddr = index_x + index_y * 25 + channel_cnt * 575;
     end
 
-    assign data_out = conv_out[11:0];
+    assign data_out = conv_out[20:9];
 
 endmodule

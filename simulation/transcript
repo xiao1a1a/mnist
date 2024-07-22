@@ -1,0 +1,387 @@
+# Compile of conv1.v failed with 3 errors.
+# Compile of conv1.v failed with 2 errors.
+# Compile of conv1.v failed with 1 errors.
+# Compile of conv1.v was successful with warnings.
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of rom_model.v was successful.
+# Compile of conv1.v failed with 1 errors.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v failed with 1 errors.
+# 4 compiles, 2 failed with 2 errors.
+# Compile of rom_model.v was successful.
+# Compile of conv1.v failed with 1 errors.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.tb_conv1
+# vsim -gui work.tb_conv1 
+# Start time: 16:37:02 on Jul 22,2024
+# //  ModelSim DE-64 10.6c Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim DE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+# ** Error (suppressible): (vsim-PLI-3098) C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/conv1.v(134): $readmemh : Argument 2 must be a memory.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv1/u_conv1 File: C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/conv1.v
+# ** Error (suppressible): (vsim-PLI-3098) C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/conv1.v(135): $readmemh : Argument 2 must be a memory.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_conv1/u_conv1 File: C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/conv1.v
+# Error loading design
+# End time: 16:37:04 on Jul 22,2024, Elapsed time: 0:00:02
+# Errors: 2, Warnings: 0
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.tb_conv1
+# vsim -gui work.tb_conv1 
+# Start time: 16:43:00 on Jul 22,2024
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+# Compile of rom_model.v was successful.
+# Compile of conv1.v failed with 1 errors.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 1 failed with 1 error.
+# Error opening C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/(vlog-13069) C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/conv1.v
+# Path name 'C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/(vlog-13069) C:/Users/VeriMake_C1/Desktop/lyj/mnisty/sources/rtl/conv1.v' doesn't exist.
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+add wave -position insertpoint sim:/tb_conv1/u_out_ram/*
+add wave -position insertpoint sim:/tb_conv1/u_conv1/*
+run
+run
+run
+run
+restart
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+run
+step
+add wave -position insertpoint  \
+sim:/tb_conv1/data_in
+restart
+run
+add wave -position insertpoint  \
+sim:/tb_conv1/u_rom/data_out
+restart
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+run
+restart
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+run
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+run
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv1/buffer
+restart
+run
+run
+run
+run
+restart
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+# Error: ¾¾·Î¡
+#        Unable to replace existing ini file (C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/conv1.mpf).  File can not be renamed.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+run
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv1/w_sel
+restart
+run
+restart
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+run
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv1/w_2
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv1/w_3
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv1/w_1
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv1/bias
+restart
+run
+restart
+run
+add wave -position insertpoint  \
+sim:/tb_conv1/u_out_ram/ram
+restart
+run
+restart
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+run
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+run
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+# Error: ¾¾·Î¡
+#        Unable to replace existing ini file (C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/conv1.mpf).  File can not be renamed.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+run
+run
+run
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step -out
+restart
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+run
+restart
+run
+restart
+run
+run
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+# Error: ¾¾·Î¡
+#        Unable to replace existing ini file (C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/conv1.mpf).  File can not be renamed.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+run
+run
+run
+run
+# Compile of rom_model.v was successful.
+# Compile of conv1.v failed with 2 errors.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 1 failed with 2 errors.
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of rom_model.v was successful.
+# Compile of conv1.v was successful.
+# Compile of conv1_tb.v was successful.
+# Compile of out_ram.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_conv1
+# Loading work.rom_8x784
+# Loading work.out_ram
+# Loading work.conv1
+add wave -position insertpoint  \
+sim:/tb_conv1/u_conv1/calc_done
+run

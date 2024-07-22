@@ -1,0 +1,22 @@
+C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/out_ram.v {1 {vlog -work work -stats=none {C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\out_ram.v}
+Model Technology ModelSim DE-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module out_ram
+
+Top level modules:
+	out_ram
+
+} {} {}} C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/conv1_tb.v {1 {vlog -work work -stats=none C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/conv1_tb.v
+Model Technology ModelSim DE-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module tb_conv1
+
+Top level modules:
+	tb_conv1
+
+} {} {}} C:/Users/VeriMake_C1/Desktop/lyj/mnisty/simulation/rom_model.v {1 {vlog -work work -stats=none {C:\Users\VeriMake_C1\Desktop\lyj\mnisty\simulation\rom_model.v}
+Model Technology ModelSim DE-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module rom_8x784
+
+Top level modules:
+	rom_8x784
+
+} {} {}}
